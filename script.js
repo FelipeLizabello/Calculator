@@ -48,7 +48,7 @@ let displayOperator = null;
 
 const containerNumber = document.querySelector(".number");
 
-for(let i=0; i<=9; i++){
+for(let i=1; i<=9; i++){
     const btnNumber = document.createElement('button');
     btnNumber.textContent = i;
     btnNumber.addEventListener('click', () => updateDisplay(i));
@@ -98,4 +98,15 @@ btnResult.addEventListener('click', () => {
         displaySecNumber = '';
         displayOperator = null;
     }
+});
+
+const btnClearAll = document.createElement('button');
+btnClearAll.textContent = 'Clear all';
+containerOperator.appendChild(btnClearAll);
+
+btnClearAll.addEventListener('click', () =>{
+    display.value = '';
+    displayFirstNumber = '';
+    displaySecNumber = '';
+    displayOperator = null;
 });

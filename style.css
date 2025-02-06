@@ -1,0 +1,40 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+#display{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    gap: 10px
+}
+
+.number{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.operator{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#zero{
+    height: 50px;
+    margin-top: 5px;
+}
